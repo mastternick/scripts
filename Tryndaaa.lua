@@ -94,8 +94,8 @@ OnTick(function(myHero)
 			end
 		end
 		
-		-------  smite jungle-----
-		
+		------- smite jungle ----- pam activator ---
+	
 		------------ E draw ---------------
 	   if CanUseSpell(myHero,_E) == READY and Tryndamere.dr.DE:Value() and  hpenemy <dmgenemy and ValidTarget(enemy, 660) then
 	   DrawCircle(GetOrigin(enemy),65 ,1, 1, ARGB(222,255,255,0))
@@ -148,6 +148,8 @@ OnRemoveBuff(function(object,buffProc)
 		stackExpireTime = nil
 	end
 end)
-
+	
+	
+	
 	
 PrintChat("<font color='#FF0000'> Crazy Trynda v1.5 </font><font color='#FFFF00'> by mastternick <font color='#66CC66'>(thank you all nice people for inspiration)</font>")
