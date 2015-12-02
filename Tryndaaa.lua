@@ -148,8 +148,6 @@ OnRemoveBuff(function(object,buffProc)
 		stackExpireTime = nil
 	end
 end)
-	
-	
-	
+
 	
 PrintChat("<font color='#FF0000'> Crazy Trynda v1.5 </font><font color='#FFFF00'> by mastternick <font color='#66CC66'>(thank you all nice people for inspiration)</font>")
