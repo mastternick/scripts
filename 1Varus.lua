@@ -132,7 +132,7 @@ function combo(unit)
 	if IOW:Mode() == "Combo" then
 	
 	local rangeFQ = VMenu.c.rangeFQ:Value()   --added
-	if ValidTarget(unit, 1500) and not ValidTarget(unit, rangeFQ) then
+	if ValidTarget(unit, 1500) and not ValidTarget(unit, rangeFQ) then   --added
 	
 		--Q1
 		if VMenu.c.Q:Value() and Ready(_Q) and ValidTarget(unit, 1500) and not qCharge and wTrack[GetObjectName(unit)] >= VMenu.c.sQ:Value() then
@@ -174,7 +174,7 @@ function combo(unit)
 			end
 		end
 		end
-		
+		--------------------------------------------
 		
 		--E
 		if Ready(_E) and VMenu.c.E:Value() and ValidTarget(unit, GetCastRange(myHero,_E)) and wTrack[GetObjectName(unit)] >= VMenu.c.sE:Value() then
